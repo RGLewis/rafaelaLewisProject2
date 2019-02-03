@@ -552,14 +552,175 @@ p {
   background-position: center center;
   background-repeat: no-repeat; }
 
-.blog {
-  background: tomato; }
+.navLogo {
+  width: 20%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
 
-.blogPostContainer {
-  width: 60%; }
+.blog {
+  position: relative;
+  z-index: 10;
+  margin-top: -250px; }
+
+.blogFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 50px; }
+  .blogFlexContainer .blogPostContainer {
+    width: 63%;
+    margin-right: 13.5%; }
+  .blogFlexContainer .blogAside {
+    width: 23.5%;
+    padding-top: 250px; }
 
 .blogWrittenContainer {
-  border: 5px solid turquoise; }
+  margin-right: -20px;
+  border-bottom: 5px solid #50e3c2;
+  border-right: 5px solid #50e3c2;
+  padding: 80px 8% 40px 16.67%; }
 
-.commentsHeading {
-  color: #2c2c2c; }
+.blogPara {
+  padding-top: 25px; }
+
+.commentsSection {
+  padding: 0 8% 0 16.67%; }
+  .commentsSection .commentsHeading {
+    color: #2c2c2c;
+    padding: 40px 0; }
+  .commentsSection .blogComment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 100px; }
+    .commentsSection .blogComment .userImage {
+      width: 14%; }
+      .commentsSection .blogComment .userImage:hover .userProfilePic {
+        border: 5px solid #50e3c2; }
+    .commentsSection .blogComment .commentContent {
+      margin-left: 5%;
+      width: calc((100% - 14%) - 5%); }
+
+.blogCommentForm {
+  padding: 0 8% 0 16.67%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.blogCommentForm input[type="text"], .blogCommentForm input[type="email"] {
+  margin: 0;
+  width: 47%;
+  border: none;
+  border-bottom: 3px solid #50e3c2;
+  background: none;
+  padding: 25px 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.45rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 40px; }
+
+.blogCommentForm input[type="text"] {
+  margin-right: 2%; }
+
+.blogCommentForm input[type="email"] {
+  margin-left: 2%; }
+
+.blogCommentForm textarea {
+  width: 100%;
+  border: 3px solid #50e3c2;
+  background: none;
+  padding: 25px 50px 125px 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.45rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 40px;
+  resize: none; }
+
+.blogCommentForm button[type="submit"] {
+  width: 100%;
+  font-family: "Playfair Display SC", serif;
+  color: #fafffe;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+  background: #063974;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-bottom: 80px; }
+  .blogCommentForm button[type="submit"]:hover {
+    color: #50e3c2; }
+
+.blogAsidePara, .blogAsideListItem {
+  padding-left: 1%; }
+
+.blogMission, .recentPosts {
+  padding-right: 5%; }
+
+.blogPostImage {
+  -webkit-box-shadow: 30px 30px 0px -10px #50e3c2;
+  box-shadow: 30px 30px 0px -10px #50e3c2; }
+
+.blogPostTitle {
+  font-size: 1.65rem; }
+
+.blogPostInfo, .blogAnchor {
+  color: #063974;
+  font-size: 0.9rem;
+  font-style: italic; }
+
+.blogAnchor {
+  font-weight: 700; }
+  .blogAnchor:hover {
+    color: #50e3c2; }
+
+.commentInfo, .userAccount {
+  color: #063974;
+  font-weight: 700; }
+
+.commentInfo {
+  padding-bottom: 10px; }
+
+.userAccount:hover {
+  color: #50e3c2; }
+
+.blogAsideHeading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
+  color: #063974;
+  padding: 10px 0; }
+
+.blogAsideAnchor {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45rem;
+  letter-spacing: 0.1rem;
+  color: #2c2c2c;
+  margin-left: 1%; }
+  .blogAsideAnchor:hover {
+    color: #50e3c2; }
+
+.blogAsideListItem {
+  list-style-position: inside;
+  color: #50e3c2; }

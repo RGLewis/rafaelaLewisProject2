@@ -26,7 +26,7 @@
                         <a href="index.html" class="navAnchor anchorLeft">Home</a>
                     </li>
                     <li class="navListItem">
-                        <a href="#about" class="navAnchor">About</a>
+                        <a href="index.html#about" class="navAnchor">About</a>
                     </li>
                     <li class="navListItem">
                         <a href="blog.html" class="navAnchor">Blog</a>
@@ -58,19 +58,23 @@
                 <div class="blogPostContainer">
                     <!-- Blog Article starts -->
                     <article class="blogArticle">
-                        <!-- Article Image, Wrapper starts -->
-                        <div class="articleImage wrapper">
-                            <img src="assets/postImage.jpg" alt="he back entrance of a white shingled house, with welcoming lights on.">
-                            <!-- Wrapper ends -->
+                        <!-- Article Image -->
+                        <div class="articleImage">
+                            <!-- Wrapper starts -->
+                            <div class="wrapper">
+                                <img src="assets/postImage.jpg" alt="he back entrance of a white shingled house, with welcoming lights on." class="blogPostImage">
+                                <!-- Wrapper ends -->
+                            </div>
+                        <!-- Article image ends -->
                         </div>
-                        <!-- Blog Written Container starts -->
-                        <div class="blogWrittenContainer">
-                            <!-- Inner Wrapper starts -->
-                            <div class="innerWrapper">
+                        <!-- Wrapper starts -->
+                        <div class="wrapper">
+                            <!-- Blog Written Container starts -->
+                            <div class="blogWrittenContainer">
                                 <!-- Blog Post Info -->
                                 <div class="postInfo">
                                     <!-- Post Title -->
-                                    <h4>Five <span class="lowercase">Days of Ocean Seas</span></h4>
+                                    <h4 class="blogPostTitle">Five <span class="lowercase">Days of Ocean Seas</span></h4>
                                     <!-- Post Info -->
                                     <p class="blogPostInfo">Monday January 21th, 2019 by <a href="#" class="blogAnchor"> Bora</a></p>
                                 </div>
@@ -81,24 +85,24 @@
                                     <p class="blogPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repellat nulla totam velit dolor placeat cumque cum odio? Voluptatibus vero molestias sequi quae assumenda eos nesciunt consequatur perspiciatis accusamus blanditiis alias, iure nihil itaque reiciendis quaerat repellendus magni eveniet molestiae consectetur facilis ea architecto cum quidem. Nostrum, cum officia ab praesentium cumque modi beatae deserunt ullam at iure adipisci sed laboriosam facilis repellendus nesciunt corporis incidunt magnam nisi delectus dolorum neque.</p>
                                     <p class="blogPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, obcaecati tempora ducimus voluptatem, quasi est, et at non reprehenderit similique fuga eligendi nihil.</p>
                                 </div>
-                                <!-- Inner Wrapper ends -->
+                            <!-- Blog Written Container ends -->
                             </div>
-                        <!-- Blog Written Container ends -->
+                        <!-- Wrapper ends -->
                         </div>
                     <!-- Blog article ends -->
                     </article>
                     <!-- Comments Section Starts -->
                     <div class="commentsSection">
-                        <!-- Inner Wrapper starts -->
-                        <div class="innerWrapper">
+                        <!-- Wrapper starts -->
+                        <div class="wrapper">
                             <!-- Comments Heading -->
                             <h6 class="commentsHeading">Comments:</h6>
                             <!-- Comment 1 -->
-                            <div class="comment1">
+                            <div class="blogComment comment1">
                                 <!-- User Image -->
                                 <div class="userImage">
                                     <a href="#">
-                                        <img src="assets/commentImage.jpg" alt="A headshot of Reyansh, a man in his twenties or thirties, wearing a dark jacket and white shirt, posing against a dark, wood panelled wall.">
+                                        <img src="assets/commentImage.jpg" alt="A headshot of Reyansh, a man in his twenties or thirties, wearing a dark jacket and white shirt, posing against a dark, wood panelled wall." class="userProfilePic">
                                     </a> 
                                 </div>
                                 <!-- Comment Content -->
@@ -109,11 +113,11 @@
                                 </div>
                             </div>
                             <!-- Comment 2 -->
-                            <div class="comment1">
+                            <div class="blogComment comment2">
                                 <!-- User Image -->
                                 <div class="userImage">
                                     <a href="#">
-                                        <img src="assets/commentImage2.jpg" alt="A headshot of Olivia, a woman in her twenties or thirties, wearing aviator sunglasses, a white shirt with a text graphic, and bold lipstick, posing in front of a palm tree.">
+                                        <img src="assets/commentImage2.jpg" alt="A headshot of Olivia, a woman in her twenties or thirties, wearing aviator sunglasses, a white shirt with a text graphic, and bold lipstick, posing in front of a palm tree." class="userProfilePic">
                                     </a>
                                 </div>
                                 <!-- Comment Content -->
@@ -123,26 +127,80 @@
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perspiciatis quam a eum facilis consequuntur rerum eveniet distinctio?</p>
                                 </div>
                             </div>
-                        <!-- Inner Wrapper ends -->
+                        <!-- Wrapper ends -->
                         </div>
                     <!-- Comments Section ends -->
                     </div>
                     <!-- Comment Form starts -->
-                    <form action="" method="POST" name="commentForm">
-                        
-                    </form>
+                    <div class="blogCommentForm">
+                        <!-- Wrapper starts -->
+                        <div class="wrapper">
+                            <form action="" method="POST" name="commentForm">
+                                <!-- Name -->
+                                <label for="name" class="visuallyHidden">What is your first name?</label>
+                                <input type="text" name="userName" id="name" placeholder="Name">
+                                <!-- Email -->
+                                <label for="email" class="visuallyHidden">What is your email address?</label>
+                                <input type="email" name="email" id="email" placeholder="Email address">
+                                <!-- Comment -->
+                                <label for="userComment" class="visuallyHidden">What is your comment?</label>
+                                <textarea name="userComment" id="userComment" placeholder="Comment"></textarea>
+                                <!-- Submit button -->
+                                <button type="submit">Post Comment</button>
+                            </form>
+                            <!-- Wrapper ends -->
+                        </div>
+                    </div>
+                    
                 <!-- Blog Post Container ends -->
                 </div>
-                
                 <!-- Blog aside -->
-                <aside class="blogAside"></aside>
+                <aside class="blogAside">
+                    <!-- Wrapper starts -->
+                    <div class="wrapper">
+                        <!-- Image -->
+                        <div class="blogAsideImage">
+                            <img src="assets/sidebarImage.jpg" alt="Two homes on stilts, slightly elevated off the water.">
+                        </div>
+                        <!-- Our Mission -->
+                        <div class="blogMission">
+                            <h6 class="blogAsideHeading">Our Mission</h6>
+                            <p class="blogAsidePara">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
+                        </div>
+                        <!-- Recent Posts -->
+                        <div class="recentPosts">
+                            <h6 class="blogAsideHeading">Recent Posts</h6>
+                            <li class="blogAsideListItem">
+                                <a href="#" class="blogAsideAnchor">Donec facilisis tortor ut</a>
+                            </li>
+                            <li class="blogAsideListItem">
+                                <a href="#" class="blogAsideAnchor">Augue lacinia at viverra</a>
+                            </li>
+                            <li class="blogAsideListItem">
+                                <a href="#" class="blogAsideAnchor">Semper sed sapien metus</a>
+                            </li>
+                            <li class="blogAsideListItem">
+                                <a href="#" class="blogAsideAnchor">Scelerisque nec pharetra</a>
+                            </li>
+                        </div>
+                    <!-- Wrapper ends -->
+                    </div>
+                </aside>
             <!-- Blog Flex Container ends -->
             </div>
         <!-- BLOG SECTION ENDS -->
         </section>
-
     <!-- MAIN ENDS -->
     </main>
-    
+
+    <!-- FOOTER STARTS -->
+    <footer class="footer">
+        <!-- Inner Wrapper starts -->
+        <div class="innerWrapper">
+            <p>Copyright © 2019 HackerYou</p>
+            <!-- Inner Wrapper ends -->
+        </div>
+        <!-- FOOTER ENDS -->
+    </footer>
 </body>
 </html>
