@@ -1,0 +1,126 @@
+/* GENERAL STYLES */
+/*Default styles*/
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width:100%;
+    width: 100%;
+    display: block;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+}
+
+/* Wrapper styles */
+.wrapper {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.innerWrapper {
+    max-width: 1600px;
+	width: 80%;
+	margin: 0 auto; 
+}
+
+/*Font and Background Styles*/
+html{
+    font-size: 125%;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $primaryText;
+    background: $primaryBackgroundH2;
+    font-family: $primaryFont;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: $accentFont;
+    color: $accentText;
+    font-size: 5.56rem;
+    text-transform: uppercase;
+    line-height: 6rem;
+}
+
+h2 {
+    color: $primaryBackgroundH2;
+    font-size: 4.35rem;
+    font-weight: $bold;
+    line-height: $heightLarge;
+    letter-spacing: 0.45rem;
+}
+
+h3 {
+    color: $accentText2;
+    font-size: 1.75rem;
+    font-weight: $bold;
+    line-height: $heightLarge;
+    letter-spacing: 0.19rem;
+}
+
+h4 {
+    color: $accentText2;
+    font-size: 1.75rem;
+    font-weight: $bold;
+    line-height: $heightLarge;
+    letter-spacing: 0.19rem;
+}
+
+h5 {
+    font-family: $accentFont;
+    color: $accentVibrant;
+    font-size: 1.73rem;
+}
+
+h6 {
+    color: $accentText2;
+    font-size: 1.5rem;
+    font-weight: $bold;
+    line-height: $heightLarge;
+    letter-spacing: 0.16rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: $regular;
+    line-height: $heightSmall;
+    letter-spacing: 0.1rem;
+}
+// Additional class styles
+// "Read More" Button
+.more {
+    font-family: $accentFont;
+    color: $primaryBackgroundH2;
+    font-size: 1rem;
+    line-height: $heightMedium;
+    letter-spacing: 0.05rem;
+    background: $accentText;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+
+    &:hover {
+        color: $accentVibrant;
+    }
+
+    &:active {
+        border-radius: 5px;
+    }
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
