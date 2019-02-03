@@ -232,7 +232,7 @@ p {
   line-height: 1.45rem;
   letter-spacing: 0.1rem; }
 
-.more {
+.moreButton {
   font-family: "Playfair Display SC", serif;
   color: #fafffe;
   font-size: 1rem;
@@ -242,21 +242,13 @@ p {
   text-align: center;
   text-decoration: none;
   padding: 10px 20px; }
-  .more:hover {
+  .moreButton:hover {
     color: #50e3c2; }
-  .more:active {
+  .moreButton:active {
     border-radius: 5px; }
 
 .lowercase {
   text-transform: lowercase; }
-
-.upperHeaderContainer {
-  min-height: 90vh;
-  width: 100%;
-  background-image: url(../assets/homeImage1.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
 
 .navAnchor {
   text-decoration: none;
@@ -266,17 +258,14 @@ p {
   line-height: 1.45rem;
   letter-spacing: 0.05rem;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 15px; }
+  .navAnchor:hover {
+    color: #50e3c2; }
 
-.welcome {
-  font-family: "Lato", sans-serif;
-  color: #0c5f4c;
-  font-size: 3.1rem;
-  font-weight: 700;
-  line-height: 2.9rem;
-  letter-spacing: 0.335rem;
-  display: block;
-  text-transform: lowercase; }
+.navAnchor.active {
+  color: #50e3c2; }
 
 /* Skip Link */
 .skipLink {
@@ -284,7 +273,7 @@ p {
   left: -1000px;
   top: 2%;
   z-index: 999;
-  background: #ffffff;
+  background: #fafffe;
   border: 2px solid #50e3c2;
   color: #50e3c2;
   padding: 10px; }
@@ -329,15 +318,18 @@ p {
   justify-content: flex-end;
   -ms-flex-negative: 1;
   flex-shrink: 1; }
-  .navList .navAnchor {
-    padding: 10px;
-    margin: 15px; }
-    .navList .navAnchor:hover {
-      color: #50e3c2; }
 
 .navList .anchorRight {
   padding-right: 5px;
   margin-right: 0px; }
+
+.upperHeaderContainer {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url(../assets/homeImage1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .largeLogoContainer {
   width: 100%;
@@ -362,6 +354,16 @@ p {
 
 .headerOverlapImage {
   max-width: 695px; }
+
+.welcome {
+  font-family: "Lato", sans-serif;
+  color: #0c5f4c;
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.335rem;
+  display: block;
+  text-transform: lowercase; }
 
 .visitGuyana {
   padding: 80px 0; }
@@ -552,12 +554,6 @@ p {
   background-position: center center;
   background-repeat: no-repeat; }
 
-.navLogo {
-  width: 20%;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-
 .blog {
   position: relative;
   z-index: 10;
@@ -579,6 +575,36 @@ p {
     width: 23.5%;
     padding-top: 250px; }
 
+.blogAsidePara, .blogAsideListItem {
+  padding-left: 1%; }
+
+.blogMission, .recentPosts {
+  padding-right: 5%; }
+
+.blogAsideHeading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
+  color: #063974;
+  padding: 10px 0; }
+
+.blogOrderedList {
+  list-style: disc; }
+  .blogOrderedList .blogAsideListItem {
+    list-style-position: inside;
+    color: #50e3c2; }
+
+.blogAsideAnchor {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45rem;
+  letter-spacing: 0.1rem;
+  color: #2c2c2c;
+  margin-left: 1%; }
+  .blogAsideAnchor:hover {
+    color: #50e3c2; }
+
 .blogWrittenContainer {
   margin-right: -20px;
   border-bottom: 5px solid #50e3c2;
@@ -587,94 +613,6 @@ p {
 
 .blogPara {
   padding-top: 25px; }
-
-.commentsSection {
-  padding: 0 8% 0 16.67%; }
-  .commentsSection .commentsHeading {
-    color: #2c2c2c;
-    padding: 40px 0; }
-  .commentsSection .blogComment {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-bottom: 100px; }
-    .commentsSection .blogComment .userImage {
-      width: 14%; }
-      .commentsSection .blogComment .userImage:hover .userProfilePic {
-        border: 5px solid #50e3c2; }
-    .commentsSection .blogComment .commentContent {
-      margin-left: 5%;
-      width: calc((100% - 14%) - 5%); }
-
-.blogCommentForm {
-  padding: 0 8% 0 16.67%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.blogCommentForm input[type="text"], .blogCommentForm input[type="email"] {
-  margin: 0;
-  width: 47%;
-  border: none;
-  border-bottom: 3px solid #50e3c2;
-  background: none;
-  padding: 25px 50px;
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.45rem;
-  letter-spacing: 0.1rem;
-  margin-bottom: 40px; }
-
-.blogCommentForm input[type="text"] {
-  margin-right: 2%; }
-
-.blogCommentForm input[type="email"] {
-  margin-left: 2%; }
-
-.blogCommentForm textarea {
-  width: 100%;
-  border: 3px solid #50e3c2;
-  background: none;
-  padding: 25px 50px 125px 50px;
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.45rem;
-  letter-spacing: 0.1rem;
-  margin-bottom: 40px;
-  resize: none; }
-
-.blogCommentForm button[type="submit"] {
-  width: 100%;
-  font-family: "Playfair Display SC", serif;
-  color: #fafffe;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  letter-spacing: 0.05rem;
-  background: #063974;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin-bottom: 80px; }
-  .blogCommentForm button[type="submit"]:hover {
-    color: #50e3c2; }
-
-.blogAsidePara, .blogAsideListItem {
-  padding-left: 1%; }
-
-.blogMission, .recentPosts {
-  padding-right: 5%; }
 
 .blogPostImage {
   -webkit-box-shadow: 30px 30px 0px -10px #50e3c2;
@@ -693,6 +631,80 @@ p {
   .blogAnchor:hover {
     color: #50e3c2; }
 
+.commentForm input[type="text"], .commentForm input[type="email"] {
+  margin: 0;
+  width: 47%;
+  border: none;
+  border-bottom: 3px solid #50e3c2;
+  background: none;
+  padding: 25px 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.45rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 40px; }
+
+.commentForm input[type="text"] {
+  margin-right: 2%; }
+
+.commentForm input[type="email"] {
+  margin-left: 2%; }
+
+.commentForm textarea {
+  width: 100%;
+  border: 3px solid #50e3c2;
+  background: none;
+  padding: 25px 50px 125px 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.45rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 40px;
+  resize: none; }
+
+.commentForm button[type="submit"] {
+  width: 100%;
+  font-family: "Playfair Display SC", serif;
+  color: #fafffe;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+  background: #063974;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-bottom: 80px; }
+  .commentForm button[type="submit"]:hover {
+    color: #50e3c2; }
+
+.commentsSection {
+  padding: 0 8% 0 16.67%; }
+  .commentsSection .commentsHeading {
+    color: #2c2c2c;
+    padding: 40px 0; }
+  .commentsSection .blogComment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .commentsSection .blogComment .userImage {
+      width: 14%; }
+      .commentsSection .blogComment .userImage:hover .userProfilePic {
+        border: 5px solid #50e3c2; }
+    .commentsSection .blogComment .commentContent {
+      margin-left: 5%;
+      width: calc((100% - 14%) - 5%); }
+  .commentsSection .comment1 {
+    padding-bottom: 100px; }
+  .commentsSection .comment2 {
+    padding-bottom: 50px; }
+
 .commentInfo, .userAccount {
   color: #063974;
   font-weight: 700; }
@@ -703,24 +715,96 @@ p {
 .userAccount:hover {
   color: #50e3c2; }
 
-.blogAsideHeading {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 2.9rem;
-  letter-spacing: 0.1rem;
-  color: #063974;
-  padding: 10px 0; }
+.blogCommentForm {
+  padding: 0 8% 0 16.67%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
-.blogAsideAnchor {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.45rem;
-  letter-spacing: 0.1rem;
-  color: #2c2c2c;
-  margin-left: 1%; }
-  .blogAsideAnchor:hover {
-    color: #50e3c2; }
+.contactHeader {
+  min-height: 67vh;
+  width: 100%;
+  background-image: url(../assets/contactImage1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
-.blogAsideListItem {
-  list-style-position: inside;
-  color: #50e3c2; }
+.contactMethods {
+  position: relative;
+  z-index: 10;
+  margin-top: -250px; }
+
+.contactFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 50px; }
+  .contactFlexContainer .contactFormContainer {
+    width: 77%;
+    margin: 0 8.5% 130px -5%;
+    background: #fafffe;
+    padding: 5% 5% 0px 5%; }
+  .contactFlexContainer .contactInfoContainer {
+    width: 23%;
+    padding-left: 2%;
+    padding-top: 250px; }
+
+.contactFormContainer {
+  -webkit-box-shadow: 30px 30px 0px -10px #50e3c2;
+  box-shadow: 30px 30px 0px -10px #50e3c2; }
+
+.commentForm textarea {
+  padding: 25px 50px 175px 50px; }
+
+.commentForm button[type="submit"] {
+  margin-bottom: 55px; }
+
+.contactNavList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .contactNavList .contactNavAnchor {
+    color: #2c2c2c;
+    font-size: 1.2rem;
+    padding: 5px; }
+    .contactNavList .contactNavAnchor:hover {
+      color: #50e3c2; }
+  .contactNavList .contactNavAnchorLeft {
+    padding-left: 0; }
+  .contactNavList .contactNavListItem {
+    padding: 10px; }
+  .contactNavList .contactNavListItemLeft {
+    padding-left: 0; }
+
+.contactAddressInfo {
+  font-style: normal; }
+  .contactAddressInfo .contactAddressAnchor {
+    color: #2c2c2c; }
+    .contactAddressInfo .contactAddressAnchor:hover {
+      color: #50e3c2;
+      font-weight: 700; }
+  .contactAddressInfo .contactAddressAnchor:nth-child(1) {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.15rem;
+    line-height: 2.9rem; }
+  .contactAddressInfo .addressItem {
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem; }

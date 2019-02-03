@@ -132,7 +132,7 @@
                     <!-- Comments Section ends -->
                     </div>
                     <!-- Comment Form starts -->
-                    <div class="blogCommentForm">
+                    <div class="commentForm blogCommentForm">
                         <!-- Wrapper starts -->
                         <div class="wrapper">
                             <form action="" method="POST" name="commentForm">
@@ -170,18 +170,20 @@
                         <!-- Recent Posts -->
                         <div class="recentPosts">
                             <h6 class="blogAsideHeading">Recent Posts</h6>
-                            <li class="blogAsideListItem">
-                                <a href="#" class="blogAsideAnchor">Donec facilisis tortor ut</a>
-                            </li>
-                            <li class="blogAsideListItem">
-                                <a href="#" class="blogAsideAnchor">Augue lacinia at viverra</a>
-                            </li>
-                            <li class="blogAsideListItem">
-                                <a href="#" class="blogAsideAnchor">Semper sed sapien metus</a>
-                            </li>
-                            <li class="blogAsideListItem">
-                                <a href="#" class="blogAsideAnchor">Scelerisque nec pharetra</a>
-                            </li>
+                            <ul class="blogOrderedList">
+                                <li class="blogAsideListItem">
+                                    <a href="#" class="blogAsideAnchor">Donec facilisis tortor ut</a>
+                                </li>
+                                <li class="blogAsideListItem">
+                                    <a href="#" class="blogAsideAnchor">Augue lacinia at viverra</a>
+                                </li>
+                                <li class="blogAsideListItem">
+                                    <a href="#" class="blogAsideAnchor">Semper sed sapien metus</a>
+                                </li>
+                                <li class="blogAsideListItem">
+                                    <a href="#" class="blogAsideAnchor">Scelerisque nec pharetra</a>
+                                </li>
+                            </ul>
                         </div>
                     <!-- Wrapper ends -->
                     </div>
@@ -202,5 +204,22 @@
         </div>
         <!-- FOOTER ENDS -->
     </footer>
+
+    <!-- JQUERY STARTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <script>
+        // Adapted from https://stackoverflow.com/questions/2397370/change-link-color-of-the-current-page-with-css
+        $(function () {
+            $("[href]").each(function () {
+                if (this.href == window.location.href) {
+                    $(this).addClass("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
+<!-- PROJECT NOTES -->
+<!-- Fatima confirmed that I could change anything in the design that said "BeachstayS" to "Beachstay" for consistency -->

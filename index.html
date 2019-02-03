@@ -77,7 +77,7 @@
                         <!-- Paragraph -->
                         <p class="guyanaPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laboriosam veritatis similique ullam adipisci eaque! Aspernatur sint sunt repudiandae, impedit ratione itaque saepe cumque est quis sit veniam fugiat consequuntur ipsa! Odio assumenda, aut, quaerat quam in alias a quibusdam deserunt quos earum cum sequi cumque rerum nobis veniam mollitia nostrum veritatis? Assumenda, totam.</p>
                         <!-- Read More link -->
-                        <a href="#" class="more">Find Out More</a>
+                        <a href="#" class="moreButton">Find Out More</a>
                     </div>
                     <div class="guyanaImageContainer">
                         <img src="assets/smallBox.jpg" alt="A living room with wood-paneled walls and a wall of windows overlooking the ocean." class="guyanaImage">
@@ -195,7 +195,7 @@
                         <!-- Paragraph -->
                         <p class="toKnowPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,</p>
                         <!-- Read More link -->
-                        <a href="#" class="more">Read More</a>
+                        <a href="#" class="moreButton">Read More</a>
                     </div>
                     <!-- Bottom Left Written -->
                     <div class="bottomLeftWritten toKnowFlexItem">
@@ -205,7 +205,7 @@
                         <p class="toKnowPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio
                         lorem, id vestibulum lacus tristique eu. Sed urna ex,</p>
                         <!-- Read More link -->
-                        <a href="#" class="more">Read More</a>
+                        <a href="#" class="moreButton">Read More</a>
                     </div>
                     <!-- Bottom Right Image -->
                     <div class="bottomRightImage toKnowFlexItem">
@@ -229,7 +229,7 @@
                     <!-- Paragraph -->
                     <p class="freeTripPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit sint nemo sequi harum similique, vitae, repellat sit esse aliquam accusantium veritatis ipsam placeat doloremque nulla repudiandae minus. Labore velit doloribus consequuntur suscipit, optio accusamus nobis non, impedit nulla eligendi voluptatum eaque vel voluptatem quam, explicabo distinctio corporis officia enim adipisci beatae eos.</p>
                     <!-- Find Out More link -->
-                    <a href="#" class="more">Find Out More</a>
+                    <a href="#" class="moreButton">Find Out More</a>
                 </div>
             <!-- Wrapper ends -->
             </div>
@@ -247,6 +247,21 @@
         </div>
     <!-- FOOTER ENDS -->
     </footer>
+
+    <!-- JQUERY STARTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    
+    <script>
+        // Adapted from https://stackoverflow.com/questions/2397370/change-link-color-of-the-current-page-with-css
+        $(function () {
+            $("[href]").each(function () {
+                if (this.href == window.location.href) {
+                    $(this).addClass("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 
