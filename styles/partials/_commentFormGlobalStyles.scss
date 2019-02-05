@@ -12,6 +12,12 @@
     line-height: $heightSmall;
     letter-spacing: 0.1rem;
     margin-bottom: 40px;
+        &:active {
+            border: 5px solid $accentVibrant;
+        }
+        &:focus {
+            border: 5px solid $accentVibrant;
+        }
 }
 
 .commentForm input[type="text"] {
@@ -34,6 +40,12 @@
     letter-spacing: 0.1rem;
     margin-bottom: 40px;
     resize: none;
+    &:active {
+            border: 8px solid $accentVibrant;
+        }
+    &:focus {
+        border: 8px solid $accentVibrant;
+    }
 }
 
 // Button styles
@@ -53,5 +65,11 @@
 
     &:hover {
         color: $accentVibrant;
+    }
+    &:active {
+    border: 5px solid $accentVibrant;
+    }
+    &:focus {
+        border: 5px solid $accentVibrant;
     }
 }

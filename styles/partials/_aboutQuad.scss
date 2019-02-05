@@ -49,6 +49,10 @@
     }
 }
 
+.aboutAnchor {
+    display: block;
+}
+
 .aboutAnchor:hover .aboutHeader {
     color: $accentVibrant;
     text-decoration: underline;

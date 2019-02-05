@@ -1,0 +1,454 @@
+// Adjust Negative Margins and padding in the "TO KNOW" Section
+@media (max-width: 1500px) {
+    .toKnowImageLeft {
+        margin-top: -10%;
+    }
+
+    .toKnowImageRight {
+        margin-bottom: -10%;
+    }
+
+    .topLeftImage, .bottomLeftWritten  {
+        padding-right: 4%;
+    }
+
+    .topRightWritten, .bottomRightImage  {
+        padding-left: 4%;
+    }
+
+    .topRightWritten {
+        padding-right: 5%;
+    }
+
+    .bottomLeftWritten {
+        padding-left: 5%;
+    }
+}
+
+// Adjust Blog Article/Aside percentages
+@media (max-width: 1350px) {
+    .blogFlexContainer {
+        .blogPostContainer {
+            width: 60%;
+            margin-right: 8%;
+        }
+
+        .blogAside {
+            width: 35%;
+            padding-top: 250px;
+        }
+    }
+
+    .blogCommentForm input[type="text"], .blogCommentForm input[type="email"] {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}
+
+// Adjust Padding in the "TO KNOW" Section
+@media (max-width: 1320px) {
+    .toKnowFlexItem:nth-child(even) {
+        padding-top: 10px;
+    }
+
+    .toKnowTopRow, .toKnowBottomRow {
+        align-items: flex-start;
+    }
+}
+
+// Adjust flex in the "TO KNOW" Section to Column, adjust margin and padding accordingly
+@media (max-width: 1100px) {
+    .thingsToKnow {
+        padding: $sectionPadding;
+    }
+    
+    .toKnowContainer {
+        margin: 0 10%;
+    }
+
+    .toKnowTopRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toKnowBottomRow {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .toKnowFlexItem {
+        width: 100%;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .toKnowImageLeft {
+        margin-top: 0%;
+    }
+
+    .toKnowImageRight {
+        margin-bottom: 0%;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+// RESPONSIVE MENU
+    .responsiveMenu,
+	.exit {
+		display: block;
+    }
+
+    .navList {
+        opacity: 0;
+        width: 100%;
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $primaryText;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+            
+            .navAnchor {
+                font-size: 2rem;
+            }
+            
+            .navAnchor.active {
+                color: $primaryBackgroundH2;
+            }
+
+            .navAnchor:hover {
+                color: $accentVibrant;
+            }
+    }
+
+    // HOME PAGE
+    // HOME HEADER STYLES
+    .lowerHeader {
+        margin-top: -50%;
+    }
+
+    .largeLogoContainer {
+        margin-left: 0;
+        margin-top: 150px;
+        align-items: center;
+    }
+
+    // VISIT GUYANA
+    .guyanaFlexContainer {
+        flex-direction: column;
+        align-items: center;
+
+        .guyanaContentContainer {
+            width: 100%;
+            padding-right: 0;
+            flex-grow: 0;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .guyanaImageContainer {
+            width: 80%;
+            padding-left: 0;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            padding-bottom: $imageOnTop;
+        }
+
+        .guyanaImage {
+            box-shadow: -17px 17px 0px 0px $accentVibrant;
+        }
+    }
+
+    // ABOUT QUAD
+    .aboutQuad {
+        padding-bottom: 0;
+    }
+    .aboutQuadContainer {
+        flex-direction: column;
+
+        .aboutItem {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-bottom:80px;
+        }
+
+        .aboutItem:nth-child(odd) {
+            margin-right: 0px;
+        }
+    }
+    
+    // FREE TRIP
+    .freeTripContent {
+        padding: 80px 0;
+        margin: 0 10%;
+    }
+
+    // BLOG 
+    // Adjust flex to column, adjust widths
+    .blogFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+
+        .blogPostContainer {
+            width: 80%;
+            margin-right: 0;
+
+            .blogWrittenContainer {
+                border-left: 5px solid $accentVibrant;
+            }
+        }
+
+        .blogAside {
+            width: 80%;
+            padding: 50px 0 80px 0;
+        }
+    }
+
+    // Blog Post title font styles
+    .postInfo {
+        text-align: center;
+    }
+    
+    // BLOG COMMENTS and FORM SECTION
+    // Adjust width of section
+    .commentsSection {
+        padding: 0 5% 0 5%;
+    }
+
+    .blogCommentForm {
+        padding: 0 5% 0 5%; 
+    }
+
+    // BLOG ASIDE
+    // Take away padding
+    .blogAsidePara, .blogAsideListItem {
+        padding-left: 0%;
+    }
+
+    .blogMission, .recentPosts {
+        padding-right: 0%;
+    }
+
+    // Flex content
+    .blogAsideFlexContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        // text-align: center;
+        padding: 105px 0 80px 0;
+        border-top: 5px solid $accentVibrant;
+        
+        .blogAsideImage {
+            width: 50%;
+        }
+
+        .blogMission {
+            width: 100%;
+            text-align: center;
+        }
+
+        .recentPosts {
+            width: 100%;
+        }
+    }
+
+    // Blog Aside padding styles 
+    .blogAsideHeading {
+        text-align: center;
+    }
+
+    .blogAsidePara, .blogAsideListItem {
+        padding-left: 0;
+    }
+
+    .blogMission, .recentPosts {
+        padding-right: 0;
+    }
+
+    .recentPosts {
+        padding-top: 20px;
+    }
+
+    .blogAsideAnchor {
+        margin-left: 0%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    // GLOBAL FONT STYLES
+    html{
+        font-size: 112.5%;
+    }
+
+    .innerWrapper {
+        width: 85%;
+    }
+
+    // HOME PAGE
+    // HEADER
+    // Display none on the sunglasses image in the header
+    .lowerHeader {
+        display: none;
+    }
+
+    // Adjust position of Header Large Logo
+    .largeLogoContainer {
+        margin-top: 70px;
+    }
+
+    // Adjust size of H1 {
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    // Adjust margins for change to 85%
+    // TO KNOW SECTION
+    .toKnowContainer {
+        margin: 0 7.5%;
+    }
+
+    // FREE TRIP
+    .freeTripContent {
+        margin: 0 7.5%;
+    }
+    
+    // BLOG 
+    // Header height adjust 
+    .blogHeader, .contactHeader {
+        min-height: 50vh;
+    }
+
+    // Adjust section widths
+    .blogPostContainer {
+        width: 85%;
+    }
+
+    .blogAside {
+        width: 85%;
+        padding: 50px 0 80px 0;
+    }
+    
+    // BLOG COMMENTS and FORM SECTION
+    // Adjust width of section
+    .commentsSection {
+        padding: 0 2% 0 2%;
+    }
+
+    .blogCommentForm {
+        padding: 0 2% 0 2%; 
+    }
+
+    // Blog Post title font Adjust
+    .blogPostTitle {
+        font-size: 1.3rem;
+        line-height: $heightMedium;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    // GLOBAL STYLES
+    p {
+        font-size: 0.9rem;
+    }
+    
+    // HOME PAGE
+    // HEADER
+    // Adjust size of H1 {
+    h1, .welcome {
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    // Adjust height of Hero background image 
+    .upperHeaderContainer {
+        min-height: 60vh;
+        width: 100%;
+        background-image: url(../assets/homeImage1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    // Adjust height of H1
+    .largeLogoContainer {
+        margin-top: 80px;
+        min-height: 30vh;
+    }
+
+    // VISIT GUYANA
+    // Change section image width
+    .guyanaImageContainer {
+            width: 100%;
+        }
+
+    // IMAGE TRIO
+    // Display: none on last image (consulted with Fatima)
+    .imageTrio2 {
+        display: none;
+    }
+
+    // Recalculate widths for 2 images 
+    .galleryImage {
+        width: calc ((100% / 2) - 3%);
+    }
+
+    // ABOUT QUAD
+    // Display: none on icons (consulted with Fatima)
+    .aboutIconContainer {
+        display: none;
+    }
+
+    // Adjust width of About Written Content
+    .aboutQuadContainer .aboutWrittenContent {
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutItem {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .aboutQuadContainer {
+        width: 100%;
+    }
+
+    // BLOG
+    // Adjust size of anchor
+    .blogAsideAnchor {
+        font-size: 0.9rem;
+    }
+
+    .commentsSection {
+        
+        .blogComment {
+            
+            .userImage:hover .userProfilePic {
+                border: 3px solid $accentVibrant;
+            }
+        }
+    }
+
+
+}
+
+// Smallest known phones
+@media (max-width: 320px) {
+
+}

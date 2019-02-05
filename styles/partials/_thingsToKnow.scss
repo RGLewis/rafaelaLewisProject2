@@ -4,9 +4,16 @@
 }
 
 // Flex Styles
-.toKnowContainer {
+.toKnowTopRow {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.toKnowBottomRow {
+    display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -26,12 +33,12 @@
     padding-bottom: 40px;
 }
 
-.toKnowFlexItem:nth-child(odd) {
+.topLeftImage, .bottomLeftWritten  {
     padding-right:6.25%;
     padding-bottom: 35px;
 }
 
-.toKnowFlexItem:nth-child(even) {
+.topRightWritten, .bottomRightImage  {
     padding-left: 6.25%;
     padding-top: 35px;
 }
