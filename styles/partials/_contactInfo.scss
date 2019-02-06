@@ -11,6 +11,7 @@
 
         &:hover {
             color: $accentVibrant;
+            transform: scale(1.5);
         }
     }
     .contactNavAnchorLeft {
@@ -31,6 +32,7 @@
     
     .contactAddressAnchor {
         color: $primaryText;
+        display: block;
 
         &:hover {
             color: $accentVibrant;
@@ -40,15 +42,15 @@
 
     .contactAddressAnchor:nth-child(1) {
         font-weight: $bold;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         letter-spacing: 0.15rem;
         line-height: $heightLarge;
+        display: block;
+        word-wrap: break-word;
     }
 
     .addressItem {
         line-height: $heightMedium;
-        // font-size: 1.1rem;
-        // font-weight: $light;
         letter-spacing: 0.1rem;
     }
 }

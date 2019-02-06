@@ -116,9 +116,12 @@ p {
     text-align: center;
     text-decoration: none;
     padding: 10px 20px;
+    display: inline-block;
 
     &:hover {
         color: $accentVibrant;
+	    -webkit-animation: jello-vertical 0.9s both;
+	    animation: jello-vertical 0.9s both;
     }
 }
 

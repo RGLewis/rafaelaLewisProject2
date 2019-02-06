@@ -23,6 +23,15 @@
     .bottomLeftWritten {
         padding-left: 5%;
     }
+
+    // CONTACT PAGE
+    // Adjust size of email anchor
+    .contactAddressInfo {
+        .contactAddressAnchor:nth-child(1) {
+            font-weight: $bold;
+            font-size: 1rem;
+        }
+    }    
 }
 
 // Adjust Blog Article/Aside percentages
@@ -43,8 +52,7 @@
         width: 100%;
         margin-left: 0;
         margin-right: 0;
-    }
-    
+    }   
 }
 
 // Adjust Padding in the "TO KNOW" Section
@@ -58,7 +66,34 @@
     }
 }
 
-// Adjust flex in the "TO KNOW" Section to Column, adjust margin and padding accordingly
+// Adjust widths on Contact Page
+@media (max-width: 1350px) {
+    // CONTACT PAGE
+    .contactFlexContainer {            
+        .contactFormContainer {
+            width: 70%;
+            margin: 0 0% 130px 0;
+            transform: translateX(-5%);
+            background: $primaryBackgroundH2;
+            padding: 5% 5% 0px 5%;
+        }
+
+        .contactInfoContainer {
+            width: 30%;
+            padding-left: 5%;
+            padding-top: 250px;
+        }
+    }
+
+    // Adjust form input widths
+    .contactFormContainer input[type="text"], .contactFormContainer input[type="email"] {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Adjust flex in the "TO KNOW" Section to Column, adjust margin and padding accordingly. Adjust width of inputs of form on CONTACT page.
 @media (max-width: 1100px) {
     .thingsToKnow {
         padding: $sectionPadding;
@@ -93,14 +128,30 @@
     }
 }
 
+// Adjust height of lower header and logo
+@media (max-width: 1220px) {
+    // HOME PAGE
+    // HOME HEADER STYLES
+    .lowerHeader {
+        margin-top: -50%;
+    }
+
+    .largeLogoContainer {
+        margin-left: 0;
+        margin-top: 150px;
+        align-items: center;
+    }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 // RESPONSIVE MENU
     .responsiveMenu,
-	.exit {
+	.exitMenu {
 		display: block;
     }
 
+    // Using just the Nav List (ul) for responsive menu, in order to preserve the placement of the Nav Logo, top left. As the class is already flexed, I've used opacity 0 / opacity 1, instead of display: block.
     .navList {
         opacity: 0;
         width: 100%;
@@ -131,8 +182,10 @@
 
     // HOME PAGE
     // HOME HEADER STYLES
+    // Adjust the height of lower header and Logo Container
+
     .lowerHeader {
-        margin-top: -50%;
+        margin-top: -60%;
     }
 
     .largeLogoContainer {
@@ -247,9 +300,8 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        // text-align: center;
-        padding: 105px 0 80px 0;
-        border-top: 5px solid $accentVibrant;
+        padding: 105px 50px 80px 50px;
+        border: 5px solid $accentVibrant;
         
         .blogAsideImage {
             width: 50%;
@@ -284,6 +336,34 @@
 
     .blogAsideAnchor {
         margin-left: 0%;
+    }
+
+    // BLOG PAGE
+    // Adjust the Form and Address section flex from row to column
+    .contactFlexContainer {
+        flex-direction: column;
+        margin-top: 50px;
+            
+        .contactFormContainer {
+            width: 100%;
+            margin: 0;
+        }
+
+        .contactInfoContainer {
+            width: 100%;
+            padding-left: 0%;
+            padding: 80px 0;
+            text-align: center;
+
+            .contactNavList {
+                justify-content: center;
+            }
+        }
+    }
+
+    // Adjust box shaddow
+    .contactFormContainer {
+        box-shadow: 20px 20px 0px 0px $accentVibrant;
     }
 }
 
@@ -339,7 +419,6 @@
 
     .blogAside {
         width: 85%;
-        padding: 50px 0 80px 0;
     }
     
     // BLOG COMMENTS and FORM SECTION
@@ -356,6 +435,12 @@
     .blogPostTitle {
         font-size: 1.3rem;
         line-height: $heightMedium;
+    }
+
+    // CONTACT PAGE
+    // Adjust Heading line height
+    .contactPageHeader {
+        line-height: 80px;
     }
 }
 
@@ -377,7 +462,7 @@
 
     // Adjust height of Hero background image 
     .upperHeaderContainer {
-        min-height: 60vh;
+        min-height: 40vh;
         width: 100%;
         background-image: url(../assets/homeImage1.jpg);
         background-size: cover;
@@ -387,7 +472,7 @@
 
     // Adjust height of H1
     .largeLogoContainer {
-        margin-top: 80px;
+        margin-top: 0px;
         min-height: 30vh;
     }
 
@@ -430,6 +515,12 @@
     }
 
     // BLOG
+    // Adjust Blog Aside padding and border
+    .blogAsideFlexContainer {
+        padding: 80px 5px;
+        border: 3px solid $accentVibrant;
+    }
+
     // Adjust size of anchor
     .blogAsideAnchor {
         font-size: 0.9rem;
@@ -445,10 +536,21 @@
         }
     }
 
+    // CONTACT PAGE
+    // Adjust box shaddow
+    .contactFormContainer {
+        box-shadow: 5px 5px 0px 0px $accentVibrant;
+    }
 
+    // Adjust font size of Address Aside 
+    .addressItem {
+        font-size: 0.85rem;
+    }
 }
 
-// Smallest known phones
-@media (max-width: 320px) {
-
+// Height Media query
+@media (max-height: 700px) {
+    .blog, .contactMethod {
+        margin-top: -150px;
+    }
 }

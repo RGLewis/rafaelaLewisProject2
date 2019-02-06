@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Beachstay</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display+SC:900i" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"crossorigin="anonymous">
+    <link type="image/png" href="assets/favicon.png" rel="icon">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -31,7 +31,6 @@
                         <h5 class="navLogo">Beachstay</h5>
                         <!-- Nav Links -->
                         <ul class="navList">
-                            <li class="exit closeMenu" aria-label="close responsive menu"><i class="fas fa-times exit" aria-hidden="true"></i></li>
                             <li class="navListItem">
                                 <a href="index.html" class="navAnchor anchorLeft closeMenu">Home</a>
                             </li>
@@ -43,6 +42,12 @@
                             </li>
                             <li class="navListItem">
                                 <a href="contact.html" class="navAnchor anchorRight closeMenu">Contact</a>
+                            </li>
+                            <!-- Close menu, will only show in responsive -->
+                            <li class="exitMenu">
+                                <a href="#" class="closeMenu exitAnchor" aria-label=" close responsive menu">
+                                    <i class="fas fa-times exit" aria-hidden="true"></i>
+                                </a>
                             </li>
                         </ul>
                         <!-- HEADER NAV ENDS -->
@@ -78,8 +83,7 @@
                 <div class="guyanaFlexContainer">
                     <!-- Guyana Image -->
                     <div class="guyanaImageContainer">
-                        <img src="assets/smallBox.jpg" alt="A living room with wood-paneled walls and a wall of windows overlooking the ocean."
-                            class="guyanaImage">
+                        <img src="assets/smallBox.jpg" alt="A living room with wood-paneled walls and a wall of windows overlooking the ocean." class="guyanaImage">
                     </div>
                     <!-- Guyana Content -->
                     <div class="guyanaContentContainer">
@@ -282,12 +286,6 @@
 
             // When the responsive menu (anchor) is in focus
             $('.responsiveMenu').on('focusin', function () {
-                // toggle class show on the menu
-                $('.navList').toggleClass('show');
-            });
-
-            // When the hamburger nav icon is clicked
-            $('.hamburgerMenu').on('click', function () {
                 // toggle class show on the menu
                 $('.navList').toggleClass('show');
             });

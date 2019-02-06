@@ -65,6 +65,8 @@
 
     &:hover {
         color: $accentVibrant;
+	    -webkit-animation: jello-vertical 0.9s both;
+	    animation: jello-vertical 0.9s both;
     }
     &:active {
     border: 5px solid $accentVibrant;

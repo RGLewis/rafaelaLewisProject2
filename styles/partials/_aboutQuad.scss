@@ -51,10 +51,10 @@
 
 .aboutAnchor {
     display: block;
+    border: 4px dotted transparent;
 }
 
 .aboutAnchor:hover .aboutHeader {
     color: $accentVibrant;
     text-decoration: underline;
 }
-
