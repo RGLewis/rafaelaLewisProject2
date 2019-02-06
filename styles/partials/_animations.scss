@@ -1,19 +1,6 @@
 // The following animations are adapted from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load
 
 // HOME PAGE HEADER ANIMATION
-// headerImageContainer in from left
-@keyframes slideInFromBottom3 {
-    // On page load, the image will be off the screen bottom (100% the height away from where I've coded it to be).
-    0% {
-        transform: translateY(100%);
-    }
-    // After the 1 sec transition, the image will be at it's coded spot on the page.
-    100% {
-        transform: translateY(0);
-    }
-}
-
-//largeLogoContainer in from right 
 @keyframes slideInFromBottom3 {
     // On page load, the image will be off the screen bottom (100% the height away from where I've coded it to be).
     0% {

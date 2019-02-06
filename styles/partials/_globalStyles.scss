@@ -1,5 +1,4 @@
-/* GENERAL STYLES */
-/*Default styles*/
+/* Default styles */
 a {
     text-decoration: none;
 }
@@ -38,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	margin: 0 auto; 
 }
 
-/*Font and Background Styles*/
+/* Font and Background Styles */
 html{
     font-size: 125%;
     scroll-behavior: smooth;
@@ -52,6 +51,14 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+// Common Heading Styles (font weight and line-height):
+h2, h3, h4 {
+    font-weight: $bold;
+    line-height: $heightLarge;
+}
+
+// Font styles
+// Homepage logo
 h1 {
     font-family: $accentFont;
     color: $accentText;
@@ -60,42 +67,32 @@ h1 {
     line-height: 6rem;
 }
 
+// Page Headings
 h2 {
     color: $primaryBackgroundH2;
     font-size: 4.35rem;
-    font-weight: $bold;
-    line-height: $heightLarge;
     letter-spacing: 0.45rem;
 }
 
+// Section Headings
 h3 {
     color: $accentText2;
     font-size: 1.75rem;
-    font-weight: $bold;
-    line-height: $heightLarge;
     letter-spacing: 0.19rem;
 }
 
+// Section Sub-Headings
 h4 {
     color: $accentText2;
-    font-size: 1.75rem;
-    font-weight: $bold;
-    line-height: $heightLarge;
-    letter-spacing: 0.19rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.16rem;
 }
 
+// Beachstay small Logo in Nav (H5, as it is not a homepage link -- purely decorative)
 h5 {
     font-family: $accentFont;
     color: $accentVibrant;
     font-size: 1.73rem;
-}
-
-h6 {
-    color: $accentText2;
-    font-size: 1.5rem;
-    font-weight: $bold;
-    line-height: $heightLarge;
-    letter-spacing: 0.16rem;
 }
 
 p {

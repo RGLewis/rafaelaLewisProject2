@@ -1,4 +1,4 @@
-// Adjust Negative Margins and padding in the "TO KNOW" Section
+// Adjust Negative Margins and padding in the "TO KNOW" Section, adjust the size of the email anchor on the CONTACT page
 @media (max-width: 1500px) {
     .toKnowImageLeft {
         margin-top: -10%;
@@ -131,7 +131,6 @@
 // Adjust height of lower header and logo
 @media (max-width: 1220px) {
     // HOME PAGE
-    // HOME HEADER STYLES
     .lowerHeader {
         margin-top: -50%;
     }
@@ -183,7 +182,6 @@
     // HOME PAGE
     // HOME HEADER STYLES
     // Adjust the height of lower header and Logo Container
-
     .lowerHeader {
         margin-top: -60%;
     }
@@ -247,7 +245,6 @@
     }
 
     // BLOG 
-    // Adjust flex to column, adjust widths
     .blogFlexContainer {
         display: flex;
         flex-direction: column;
@@ -269,13 +266,11 @@
         }
     }
 
-    // Blog Post title font styles
     .postInfo {
         text-align: center;
     }
     
     // BLOG COMMENTS and FORM SECTION
-    // Adjust width of section
     .commentsSection {
         padding: 0 5% 0 5%;
     }
@@ -285,7 +280,6 @@
     }
 
     // BLOG ASIDE
-    // Take away padding
     .blogAsidePara, .blogAsideListItem {
         padding-left: 0%;
     }
@@ -294,7 +288,6 @@
         padding-right: 0%;
     }
 
-    // Flex content
     .blogAsideFlexContainer {
         display: flex;
         flex-direction: column;
@@ -317,7 +310,6 @@
         }
     }
 
-    // Blog Aside padding styles 
     .blogAsideHeading {
         text-align: center;
     }
@@ -338,8 +330,7 @@
         margin-left: 0%;
     }
 
-    // BLOG PAGE
-    // Adjust the Form and Address section flex from row to column
+    // CONTACT PAGE
     .contactFlexContainer {
         flex-direction: column;
         margin-top: 50px;
@@ -361,7 +352,6 @@
         }
     }
 
-    // Adjust box shaddow
     .contactFormContainer {
         box-shadow: 20px 20px 0px 0px $accentVibrant;
     }
@@ -390,12 +380,11 @@
         margin-top: 70px;
     }
 
-    // Adjust size of H1 {
     h1 {
         font-size: 3.8rem;
     }
 
-    // Adjust margins for change to 85%
+    // Adjust margins for change to 85% width in Inner Wrapper
     // TO KNOW SECTION
     .toKnowContainer {
         margin: 0 7.5%;
@@ -407,12 +396,10 @@
     }
     
     // BLOG 
-    // Header height adjust 
     .blogHeader, .contactHeader {
         min-height: 50vh;
     }
 
-    // Adjust section widths
     .blogPostContainer {
         width: 85%;
     }
@@ -422,7 +409,6 @@
     }
     
     // BLOG COMMENTS and FORM SECTION
-    // Adjust width of section
     .commentsSection {
         padding: 0 2% 0 2%;
     }
@@ -431,14 +417,12 @@
         padding: 0 2% 0 2%; 
     }
 
-    // Blog Post title font Adjust
     .blogPostTitle {
         font-size: 1.3rem;
         line-height: $heightMedium;
     }
 
     // CONTACT PAGE
-    // Adjust Heading line height
     .contactPageHeader {
         line-height: 80px;
     }
@@ -453,14 +437,12 @@
     
     // HOME PAGE
     // HEADER
-    // Adjust size of H1 {
     h1, .welcome {
         font-size: 2rem;
         line-height: 2rem;
         text-align: center;
     }
 
-    // Adjust height of Hero background image 
     .upperHeaderContainer {
         min-height: 40vh;
         width: 100%;
@@ -470,14 +452,12 @@
         background-repeat: no-repeat;
     }
 
-    // Adjust height of H1
     .largeLogoContainer {
         margin-top: 0px;
         min-height: 30vh;
     }
 
     // VISIT GUYANA
-    // Change section image width
     .guyanaImageContainer {
             width: 100%;
         }
@@ -488,7 +468,6 @@
         display: none;
     }
 
-    // Recalculate widths for 2 images 
     .galleryImage {
         width: calc ((100% / 2) - 3%);
     }
@@ -499,7 +478,6 @@
         display: none;
     }
 
-    // Adjust width of About Written Content
     .aboutQuadContainer .aboutWrittenContent {
         width: 100%;
         text-align: center;
@@ -514,8 +492,7 @@
         width: 100%;
     }
 
-    // BLOG
-    // Adjust Blog Aside padding and border
+    // BLOG PAGE
     .blogAsideFlexContainer {
         padding: 80px 5px;
         border: 3px solid $accentVibrant;
@@ -537,12 +514,10 @@
     }
 
     // CONTACT PAGE
-    // Adjust box shaddow
     .contactFormContainer {
         box-shadow: 5px 5px 0px 0px $accentVibrant;
     }
 
-    // Adjust font size of Address Aside 
     .addressItem {
         font-size: 0.85rem;
     }

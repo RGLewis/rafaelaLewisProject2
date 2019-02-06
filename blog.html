@@ -17,13 +17,13 @@
         <div class="innerWrapper">
             <!-- Skip Link -->
             <a href="#mainContentBlog" class="skipLink">Skip to Main Content</a>
-            <!-- Responsive Menu Icon -->
+            <!-- Responsive Menu Icon (will only show under 940px) -->
             <a href="#" class="responsiveMenu" aria-label="Open responsive menu">
                 <i class="fas fa-bars hamburgerMenu" aria-hidden="true"></i>
             </a>
             <!-- HEADER NAV STARTS -->
-            <!-- Logo (I don't think it's an anchor, as there is a HOME link in the nav) -->
             <nav class="headerNav">
+                <!-- Logo (I don't think it's an anchor, as there is a HOME link in the nav) -->
                 <h5 class="navLogo">Beachstay</h5>
                 <!-- Nav Links -->
                 <ul class="navList">
@@ -39,14 +39,14 @@
                     <li class="navListItem">
                         <a href="contact.html" class="navAnchor anchorRight">Contact</a>
                     </li>
-                    <!-- Close menu, will only show in responsive -->
+                    <!-- Close Responsive Menu (will only show under 940px) -->
                     <li class="exitMenu">
                         <a href="#" class="closeMenu exitAnchor" aria-label=" close responsive menu">
                             <i class="fas fa-times exit" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
-                <!-- HEADER NAV ENDS -->
+            <!-- HEADER NAV ENDS -->
             </nav>
         <!-- Inner Wrapper ends -->
         </div>
@@ -85,7 +85,7 @@
                                 <!-- Blog Post Info -->
                                 <div class="postInfo">
                                     <!-- Post Title -->
-                                    <h4 class="blogPostTitle">Five <span class="lowercase">Days of Ocean Seas</span></h4>
+                                    <h3 class="blogPostTitle">Five <span class="lowercase">Days of Ocean Seas</span></h3>
                                     <!-- Post Info -->
                                     <p class="blogPostInfo">Monday January 21th, 2019 by <a href="#" class="blogAnchor"> Bora</a></p>
                                 </div>
@@ -106,8 +106,8 @@
                     <div class="commentsSection">
                         <!-- Wrapper starts -->
                         <div class="wrapper">
-                            <!-- Comments Heading -->
-                            <h6 class="commentsHeading">Comments:</h6>
+                            <!-- Comments Heading. I've chosen to make this an H4, because although it is styled differently, I believe it holds the same importance of other section secondary subheadings -->
+                            <h4 class="commentsHeading">Comments:</h4>
                             <!-- Comment 1 -->
                             <div class="blogComment comment1">
                                 <!-- User Image -->
@@ -120,6 +120,7 @@
                                 <div class="commentContent">
                                 <!-- Comment Info -->
                                     <p class="commentInfo">Tuesday October 9th, 2019 by <a href="#" class=userAccount>Reyansh</a></p>
+                                    <!-- Comment -->
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sint dolores. Obcaecati reiciendis perspiciatis similique quidem aliquam nulla ipsa, vero modi! Voluptas sunt atque repudiandae sed id expedita est temporibus praesentium neque!</p>
                                 </div>
                             </div>
@@ -135,6 +136,7 @@
                                 <div class="commentContent">
                                     <!-- Comment Info -->
                                     <p class="commentInfo">Wednesday October 10th, 2019 by <a href="#" class=userAccount>Olivia</a></p>
+                                    <!-- Comment -->
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perspiciatis quam a eum facilis consequuntur rerum eveniet distinctio?</p>
                                 </div>
                             </div>
@@ -159,51 +161,56 @@
                                 <!-- Submit button -->
                                 <button type="submit">Post Comment</button>
                             </form>
-                            <!-- Wrapper ends -->
+                        <!-- Wrapper ends -->
                         </div>
+                    <!-- Comment Form ends -->
                     </div>
-                    
                 <!-- Blog Post Container ends -->
                 </div>
-                <!-- Blog aside -->
+                
+                <!-- BLOG ASIDE STARTS -->
                 <aside class="blogAside">
                     <!-- Wrapper starts -->
                     <div class="wrapper">
-                    <!-- Blog Aside Flex Container starts -->
-                    <div class="blogAsideFlexContainer">
-                        <!-- Image -->
-                        <div class="blogAsideImage">
-                            <img src="assets/sidebarImage.jpg" alt="Two homes on stilts, slightly elevated off the water.">
-                        </div>
-                        <!-- Our Mission -->
-                        <div class="blogMission">
-                            <h6 class="blogAsideHeading">Our Mission</h6>
-                            <p class="blogAsidePara">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
-                            <a href="#" class="moreButton">Find out more</a>
-                        </div>
-                        <!-- Recent Posts -->
-                        <div class="recentPosts">
-                            <h6 class="blogAsideHeading">Recent Posts</h6>
-                            <ul class="blogOrderedList">
-                                <li class="blogAsideListItem">
-                                    <a href="#" class="blogAsideAnchor">Donec facilisis tortor ut</a>
-                                </li>
-                                <li class="blogAsideListItem">
-                                    <a href="#" class="blogAsideAnchor">Augue lacinia at viverra</a>
-                                </li>
-                                <li class="blogAsideListItem">
-                                    <a href="#" class="blogAsideAnchor">Semper sed sapien metus</a>
-                                </li>
-                                <li class="blogAsideListItem">
-                                    <a href="#" class="blogAsideAnchor">Scelerisque nec pharetra</a>
-                                </li>
-                            </ul>
-                        </div>
-                    <!-- Blog Aside Flex Container ends -->
-                    </div>
-                        
+                        <!-- Blog Aside Flex Container starts -->
+                        <div class="blogAsideFlexContainer">
+                            <!-- Image -->
+                            <div class="blogAsideImage">
+                                <img src="assets/sidebarImage.jpg" alt="Two homes on stilts, slightly elevated off the water.">
+                            </div>
+                            <!-- Our Mission -->
+                            <div class="blogMission">
+                                <!-- Heading -->
+                                <h4 class="blogAsideHeading">Our Mission</h4>
+                                <!-- Mission content -->
+                                <p class="blogAsidePara">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
+                                <a href="#" class="moreButton">Find out more</a>
+                            </div>
+                            <!-- Recent Posts -->
+                            <div class="recentPosts">
+                                <!-- Heading -->
+                                <h4 class="blogAsideHeading">Recent Posts</h4>
+                                <!-- List of Recent Posts -->
+                                <ul class="blogOrderedList">
+                                    <li class="blogAsideListItem">
+                                        <a href="#" class="blogAsideAnchor">Donec facilisis tortor ut</a>
+                                    </li>
+                                    <li class="blogAsideListItem">
+                                        <a href="#" class="blogAsideAnchor">Augue lacinia at viverra</a>
+                                    </li>
+                                    <li class="blogAsideListItem">
+                                        <a href="#" class="blogAsideAnchor">Semper sed sapien metus</a>
+                                    </li>
+                                    <li class="blogAsideListItem">
+                                        <a href="#" class="blogAsideAnchor">Scelerisque nec pharetra</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <!-- Blog Aside Flex Container ends -->
+                        </div>  
                     <!-- Wrapper ends -->
                     </div>
+                <!-- BLOG ASIDE ENDS -->
                 </aside>
             <!-- Blog Flex Container ends -->
             </div>
@@ -217,9 +224,9 @@
         <!-- Inner Wrapper starts -->
         <div class="innerWrapper">
             <p>Copyright © 2019 HackerYou</p>
-            <!-- Inner Wrapper ends -->
+        <!-- Inner Wrapper ends -->
         </div>
-        <!-- FOOTER ENDS -->
+    <!-- FOOTER ENDS -->
     </footer>
 
     <!-- JQUERY STARTS -->

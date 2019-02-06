@@ -22,11 +22,6 @@
     width: 50%;
 }
 
-// Font Styles
-.colorChange {
-    color: $accentText;
-}
-
 // Padding styles
 .toKnowPara {
     padding-top: 10px;
@@ -68,4 +63,9 @@
     position: relative;
     z-index: 10;
     margin-bottom: -6%;
+}
+
+// Font Styles
+.colorChange {
+    color: $accentText;
 }

@@ -16,7 +16,7 @@
     line-height: 50px;
 }
 
-// Quad Flex styles
+// Quad Flex, margin and padding styles
 .aboutQuadContainer {
     display: flex;
     flex-direction: row;
@@ -49,6 +49,7 @@
     }
 }
 
+// Border and font styles
 .aboutAnchor {
     display: block;
     border: 4px dotted transparent;

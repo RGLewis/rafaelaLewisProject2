@@ -12,12 +12,14 @@
     line-height: $heightSmall;
     letter-spacing: 0.1rem;
     margin-bottom: 40px;
-        &:active {
-            border: 5px solid $accentVibrant;
-        }
-        &:focus {
-            border: 5px solid $accentVibrant;
-        }
+        
+    &:active {
+        border: 5px solid $accentVibrant;
+    }
+        
+    &:focus {
+        border: 5px solid $accentVibrant;
+    }
 }
 
 .commentForm input[type="text"] {
@@ -40,9 +42,11 @@
     letter-spacing: 0.1rem;
     margin-bottom: 40px;
     resize: none;
+    
     &:active {
             border: 8px solid $accentVibrant;
         }
+    
     &:focus {
         border: 8px solid $accentVibrant;
     }
@@ -68,9 +72,11 @@
 	    -webkit-animation: jello-vertical 0.9s both;
 	    animation: jello-vertical 0.9s both;
     }
+
     &:active {
-    border: 5px solid $accentVibrant;
+        border: 5px solid $accentVibrant;
     }
+
     &:focus {
         border: 5px solid $accentVibrant;
     }

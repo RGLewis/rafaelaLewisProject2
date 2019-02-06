@@ -161,14 +161,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@keyframes slideInFromBottom3 {
-  0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%); }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-
 @-webkit-keyframes slideInFromBottom {
   0% {
     -webkit-transform: translateY(10%);
@@ -252,8 +244,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
-/* GENERAL STYLES */
-/*Default styles*/
+/* Default styles */
 a {
   text-decoration: none; }
 
@@ -285,7 +276,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   width: 80%;
   margin: 0 auto; }
 
-/*Font and Background Styles*/
+/* Font and Background Styles */
 html {
   font-size: 125%;
   scroll-behavior: smooth; }
@@ -297,6 +288,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+h2, h3, h4 {
+  font-weight: 700;
+  line-height: 2.9rem; }
+
 h1 {
   font-family: "Playfair Display SC", serif;
   color: #063974;
@@ -307,35 +302,22 @@ h1 {
 h2 {
   color: #fafffe;
   font-size: 4.35rem;
-  font-weight: 700;
-  line-height: 2.9rem;
   letter-spacing: 0.45rem; }
 
 h3 {
   color: #0c5f4c;
   font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 2.9rem;
   letter-spacing: 0.19rem; }
 
 h4 {
   color: #0c5f4c;
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 2.9rem;
-  letter-spacing: 0.19rem; }
+  font-size: 1.5rem;
+  letter-spacing: 0.16rem; }
 
 h5 {
   font-family: "Playfair Display SC", serif;
   color: #50e3c2;
   font-size: 1.73rem; }
-
-h6 {
-  color: #0c5f4c;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 2.9rem;
-  letter-spacing: 0.16rem; }
 
 p {
   font-size: 1rem;
@@ -630,9 +612,6 @@ p {
 .toKnowFlexItem {
   width: 50%; }
 
-.colorChange {
-  color: #063974; }
-
 .toKnowPara {
   padding-top: 10px;
   padding-bottom: 40px; }
@@ -667,6 +646,9 @@ p {
   position: relative;
   z-index: 10;
   margin-bottom: -6%; }
+
+.colorChange {
+  color: #063974; }
 
 .freeTripContent {
   padding: 150px 18%;
