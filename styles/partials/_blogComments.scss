@@ -13,6 +13,7 @@
 
         .userImage {
             width: 14%;
+            border: 5px solid transparent;
 
             &:hover .userProfilePic {
                 border: 5px solid $accentVibrant;

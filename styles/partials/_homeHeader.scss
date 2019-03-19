@@ -23,16 +23,16 @@
 }
 
 // LOWER HEADER STYLES
-    .headerImageContainer {
-        position: relative;
-        z-index: 1;
-        margin-top: -32.5%;
-        animation: 1s ease-out 0s 1 slideInFromBottom3;
-    }
+.headerImageContainer {
+    position: relative;
+    z-index: 1;
+    margin-top: -32.5%;
+    animation: 1s ease-out 0s 1 slideInFromBottom3;
+}
 
-    .headerOverlapImage {
-        max-width: 695px;
-    }
+.headerOverlapImage {
+    max-width: 695px;
+}
 
 // Font styles 
 .welcome {

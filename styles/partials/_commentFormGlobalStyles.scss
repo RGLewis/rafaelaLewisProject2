@@ -2,7 +2,7 @@
 .commentForm input[type="text"], .commentForm input[type="email"] {
     margin: 0;
     width: 47%;
-    border: none;
+    border: 3px solid transparent;
     border-bottom: 3px solid $accentVibrant;
     background: none;
     padding: 25px 50px;
@@ -13,12 +13,8 @@
     letter-spacing: 0.1rem;
     margin-bottom: 40px;
         
-    &:active {
-        border: 5px solid $accentVibrant;
-    }
-        
-    &:focus {
-        border: 5px solid $accentVibrant;
+    &:active, &:focus {
+        border: 3px solid $accentText2;
     }
 }
 
@@ -33,7 +29,7 @@
 .commentForm textarea {
     width: 100%;
     border: 3px solid $accentVibrant;
-    background: none;
+    background: transparent;
     padding: 25px 50px 125px 50px;
     font-family: $primaryFont;
     font-size: 1rem;
@@ -43,12 +39,8 @@
     margin-bottom: 40px;
     resize: none;
     
-    &:active {
-            border: 8px solid $accentVibrant;
-        }
-    
-    &:focus {
-        border: 8px solid $accentVibrant;
+    &:active, &:focus {
+        border: 3px solid $accentText2;
     }
 }
 
@@ -57,7 +49,7 @@
     width: 100%;
     font-family: $accentFont;
     color: $primaryBackgroundH2;
-    border: none;
+    border: 5px solid transparent;
     font-size: 1rem;
     line-height: $heightMedium;
     letter-spacing: 0.05rem;
